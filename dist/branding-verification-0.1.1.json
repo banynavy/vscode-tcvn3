@@ -1,0 +1,17 @@
+{
+  "version": "0.1.1",
+  "author": "Cánh Trắng",
+  "extension_id": "dn2012.tcvn3-editor",
+  "icon": "images/icon.png",
+  "icon_dimensions": [
+    500,
+    500
+  ],
+  "icon_sha256": "60563f72f902518433da9c8b21dbf526b333be24d029b299c2247daff48c08ee",
+  "vsix_sha256": "e5b6a950af8ec9e06125f927a71ba97cad796d2376e1e62df9190518748455df",
+  "runtime_unchanged": true,
+  "installed_and_verified": [
+    "C:\\Users\\Admin\\.vscode\\extensions\\dn2012.tcvn3-editor-0.1.1",
+    "C:\\Users\\Admin\\.qoder\\extensions\\dn2012.tcvn3-editor-0.1.1"
+  ]
+}

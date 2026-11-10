@@ -1,0 +1,129 @@
+{
+  "name": "tcvn3-editor",
+  "displayName": "TCVN3 Editor",
+  "description": "Hiển thị và chỉnh sửa file TCVN3 trộn GBK bằng Unicode; lưu lại đúng bảng mã gốc, tự sao lưu và giữ định dạng xuống dòng.",
+  "version": "0.2.0",
+  "publisher": "canh-trang",
+  "author": {
+    "name": "Cánh Trắng"
+  },
+  "icon": "images/icon.png",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "files": [
+    "extension.js",
+    "codec.js",
+    "save.js",
+    "tables.js",
+    "images/icon.png",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test:save": "node test/save_test.js",
+    "test:noop": "node test/noop_save_all.js",
+    "test:e2e": "node test/run-e2e.js"
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onFileSystem:tcvn3"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "tcvn3.open",
+        "title": "Mở dạng TCVN3 (Unicode)",
+        "category": "TCVN3"
+      },
+      {
+        "command": "tcvn3.openRaw",
+        "title": "Mở dạng gốc (byte)",
+        "category": "TCVN3"
+      },
+      {
+        "command": "tcvn3.search",
+        "title": "Tìm chữ có dấu trong thư mục",
+        "category": "TCVN3"
+      },
+      {
+        "command": "tcvn3.showLog",
+        "title": "Xem nhật ký lưu file",
+        "category": "TCVN3"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "tcvn3.open",
+          "when": "resourceScheme == file && resourceExtname =~ /^\\.(lua|ini|txt)$/i",
+          "group": "navigation@90"
+        },
+        {
+          "command": "tcvn3.search",
+          "when": "explorerResourceIsFolder",
+          "group": "4_search@90"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "tcvn3.open",
+          "when": "resourceScheme == file",
+          "group": "1_tcvn3"
+        },
+        {
+          "command": "tcvn3.openRaw",
+          "when": "resourceScheme == tcvn3",
+          "group": "1_tcvn3"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "tcvn3.openRaw",
+          "when": "resourceScheme == tcvn3"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "TCVN3",
+      "properties": {
+        "tcvn3.autoOpen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Tự mở file .lua/.ini/.txt mã TCVN3/GBK (không phải UTF-8) dưới dạng Unicode."
+        },
+        "tcvn3.fileExtensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            ".lua",
+            ".ini",
+            ".txt"
+          ],
+          "description": "Đuôi file được xử lý."
+        },
+        "tcvn3.projectFolders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Trong các thư mục này (khớp một phần đường dẫn), cả file chỉ có ASCII cũng mở qua TCVN3 để chữ Việt gõ thêm được lưu bằng TCVN3."
+        },
+        "tcvn3.backupDir": {
+          "type": "string",
+          "default": "",
+          "description": "Thư mục sao lưu trước khi ghi. Để trống: .tcvn3-editor/backups trong thư mục người dùng."
+        }
+      }
+    }
+  }
+}

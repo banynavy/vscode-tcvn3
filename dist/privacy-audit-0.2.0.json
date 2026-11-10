@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "extension_id": "canh-trang.tcvn3-editor",
+  "package_entries": [
+    "[Content_Types].xml",
+    "extension.vsixmanifest",
+    "extension/changelog.md",
+    "extension/codec.js",
+    "extension/extension.js",
+    "extension/images/icon.png",
+    "extension/package.json",
+    "extension/readme.md",
+    "extension/save.js",
+    "extension/tables.js"
+  ],
+  "private_marker_matches": 0,
+  "absolute_windows_paths": 0,
+  "png_metadata_chunks": [
+    "IDAT",
+    "IEND",
+    "IHDR"
+  ],
+  "bundle_entries": [
+    "README.md",
+    "SHA256SUMS.txt",
+    "TCVN3-Editor-0.2.0.vsix",
+    "install.cmd"
+  ],
+  "vsix_sha256": "951a9f7f49d78cb3e3b79e7118c1b0d3df5ada3da340fee77fefe982d679e059",
+  "zip_sha256": "b35ecd66d8b8d60376a942eb39d63bdf1b586054ef0f830934e4230bb6380661",
+  "installed": {
+    "VS Code": {
+      "version": "0.2.0",
+      "files_match": true
+    },
+    "Qoder IDE": {
+      "version": "0.2.0",
+      "files_match": true
+    }
+  },
+  "e2e": {
+    "VS Code": {
+      "passed": 35,
+      "failed": 0,
+      "synthetic_data": true
+    },
+    "Qoder IDE": {
+      "passed": 35,
+      "failed": 0,
+      "synthetic_data": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "C:\\Users\\Admin\\.vscode\\extensions\\dn2012.tcvn3-editor-0.1.0": {
+    "runtime_sha256": {
+      "extension.js": "cde522e95b20525b5b9455ab8a47300fe7d77620d9d231ab70cd3b2d3dcd9b78",
+      "codec.js": "6d9e0a635d804de1f0974e5692274d5bdebcc1847825409861b708944a853455",
+      "save.js": "205e221d11d107810bc19f7e59216a99e070b4164d5ce211d6d37c057dc24911",
+      "tables.js": "d786f457dc3b4242aae4cdf6ccecfec94363b64629c2387264adb139b32c4c28"
+    },
+    "manifest_matches_excluding_installer_metadata": true
+  },
+  "C:\\Users\\Admin\\.qoder\\extensions\\dn2012.tcvn3-editor-0.1.0": {
+    "runtime_sha256": {
+      "extension.js": "cde522e95b20525b5b9455ab8a47300fe7d77620d9d231ab70cd3b2d3dcd9b78",
+      "codec.js": "6d9e0a635d804de1f0974e5692274d5bdebcc1847825409861b708944a853455",
+      "save.js": "205e221d11d107810bc19f7e59216a99e070b4164d5ce211d6d37c057dc24911",
+      "tables.js": "d786f457dc3b4242aae4cdf6ccecfec94363b64629c2387264adb139b32c4c28"
+    },
+    "manifest_matches_excluding_installer_metadata": true
+  },
+  "vsix_sha256": "6ed935261c751a55f265be13dc87ab0e65d6dcf6ec075507ba87f14edd719315",
+  "installed_e2e": {
+    "VS Code": {
+      "passed_assertions": 31,
+      "failed": 0,
+      "report": "D:\\jxmobinew\\volam 2\\docs\\kiem-thu\\vscode-tcvn3\\2026-11-10T04-31-43-100Z\\e2e_result.txt",
+      "original_files_changed": 0
+    },
+    "Qoder IDE": {
+      "passed_assertions": 31,
+      "failed": 0,
+      "report": "D:\\jxmobinew\\volam 2\\docs\\kiem-thu\\vscode-tcvn3\\2026-11-10T04-32-15-203Z\\e2e_result.txt",
+      "original_files_changed": 0
+    }
+  },
+  "save_tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "noop_corpus": {
+    "files": 11163,
+    "byte_mismatches": 0,
+    "utf8_skipped": 6,
+    "utf16_skipped": 1
+  }
+}

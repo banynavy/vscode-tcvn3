@@ -1,0 +1,9 @@
+Installing extensions...
+Extension 'TCVN3-Editor-0.2.0.vsix' was successfully installed.
+(node:17680) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+Installing extensions...
+Extension 'TCVN3-Editor-0.2.0.vsix' was successfully installed.
+(node:15204) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Qoder IDE --trace-deprecation ...` to show where the warning was created)
+TCVN3 Editor installed. Reopen the file or reload the editor window.
